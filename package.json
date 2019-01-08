@@ -1,0 +1,36 @@
+{
+  "name": "flights-app",
+  "version": "1.0.0",
+  "description": "flight status for airports",
+  "main": "index.js",
+  "scripts": {
+    "start": "rollup --config rollup.config.js --watch",
+    "styleguide": "docz dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "everdimension@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "@reach/router": "^1.2.1",
+    "normalize.css": "^8.0.1",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "docz": "^0.13.7",
+    "docz-plugin-css": "^0.11.0",
+    "docz-theme-default": "^0.13.7",
+    "rollup": "^0.68.2",
+    "rollup-plugin-babel": "^4.1.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-postcss": "^1.6.3",
+    "rollup-plugin-replace": "^2.1.0",
+    "rollup-plugin-serve": "^0.6.1",
+    "rollup-plugin-uglify": "^6.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+.FlightInfoRow {
+  display: grid;
+  grid-template-areas:
+    'time destination terminal status'
+    '.    flights     flights  subtext';
+  align-items: baseline;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: var(--body-text-color-0);
+}
+
+.time {
+  font-size: 1.2em;
+}
+
+.destination {
+  font-size: 2em;
+  line-height: 1.2;
+}
+
+.flights {
+  font-family: monospace;
+}

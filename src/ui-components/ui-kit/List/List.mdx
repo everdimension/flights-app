@@ -1,0 +1,26 @@
+---
+name: List
+---
+
+import { Playground, PropsTable } from 'docz';
+import { ThemeProvider } from '../Palette/ThemeProvider';
+import { List } from './List';
+import { ListItem } from './ListItem';
+import { FlightInfoRow } from '../../composed-components/FlightInfoRow';
+
+# List
+
+<Playground>
+  <ThemeProvider>
+    <List
+      items={['a', 'b', 'c']}
+      renderItem={({ item }) => (
+        <ListItem key={item}>
+          <FlightInfoRow />
+        </ListItem>
+      )}
+    />
+  </ThemeProvider>
+</Playground>
+
+<PropsTable of={List} />
